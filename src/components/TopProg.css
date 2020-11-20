@@ -1,0 +1,12 @@
+.topProgs {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.topProgs_cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}

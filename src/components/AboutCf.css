@@ -1,0 +1,25 @@
+.about {
+  text-align: center;
+  padding: 50px;
+}
+
+.about_main {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.about_main > h2 {
+  font-size: 3rem;
+}
+
+.about_main > p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+.cf-img {
+  height: 120px;
+  width: 500px;
+}
