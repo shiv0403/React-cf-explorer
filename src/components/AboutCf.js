@@ -17,7 +17,7 @@ function AboutCf() {
         </p>
       </div>
       <div class="about_image" data-aos="fade-right">
-        <a href="https://www.codeforces.com" target="_blank">
+        <a href="https://www.codeforces.com" target="_blank" rel="noreferrer">
           <img
             src="https://assets.codeforces.com/users/kguseva/comments/cf.png"
             alt="codeforces"

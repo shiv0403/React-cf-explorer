@@ -26,20 +26,38 @@ function App() {
 
       <div className="app_explore">
         <Card className="app_explore_cards">
-          <CardContent>
-            <Typography color="textSecondary">hi there</Typography>
+          <CardContent className="Card_form">
+            <h2>Enter CF Handle</h2>
+            <form action="">
+              <input type="text" placeholder="Enter here" spellCheck="false" />
+              <br />
+              <button type="submit" className="cards_btn">
+                GO
+              </button>
+            </form>
           </CardContent>
-          <CardActions>
-            <button type="submit">GO</button>
-          </CardActions>
         </Card>
         <Card className="app_explore_cards">
-          <CardContent>
-            <Typography color="textSecondary">hi there</Typography>
+          <CardContent className="Card_form">
+            <h2>Enter CF Handles</h2>
+            <form action="">
+              <input
+                type="text"
+                placeholder="First handle"
+                spellCheck="false"
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="Second handle"
+                spellCheck="false"
+              />
+              <br />
+              <button type="submit" className="cards_btn">
+                GO
+              </button>
+            </form>
           </CardContent>
-          <CardActions>
-            <button type="submit">GO</button>
-          </CardActions>
         </Card>
       </div>
 
@@ -47,6 +65,9 @@ function App() {
       {/* top prog. */}
       <TopProg />
       {/* footer */}
+      <div className="app_footer">
+        <p>© Shivansh Gupta 2020</p>
+      </div>
     </div>
   );
 }
