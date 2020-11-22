@@ -1,0 +1,25 @@
+.single {
+  text-align: center;
+}
+
+.single_info > h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.single_info > img {
+  border-radius: 50%;
+}
+
+.single_graph {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.single_recentProbs {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+}

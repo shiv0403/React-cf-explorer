@@ -62,6 +62,36 @@ async function fetchRating(handle) {
   return data;
 }
 
+async function fetchStatus(handle) {
+  const time = new Date().getTime();
+  const key = "ce72ebe1d56ebe106c52288686ac4c30c4539f07";
+  const SecKey = "e4b23d29ca62a1d0adcf1c234120681bc2bd6941";
+
+  const url =
+    "https://codeforces.com/api/user.status?handle=" +
+    handle +
+    "&from=1&count=20" +
+    "&&apikey=" +
+    key +
+    "&time=" +
+    time +
+    "&apiSig=123456" +
+    "sha512Hex(123456/user.status?handle=" +
+    handle +
+    "&from=1&count=20" +
+    "&apikey=" +
+    key +
+    "&time=" +
+    time +
+    "#" +
+    SecKey +
+    ")";
+
+  const res = await fetch(url);
+  const data = await res.json();
+  return data;
+}
+
 app.get("/", (req, res) => {
   res.send("This is home route");
 });
@@ -80,6 +110,17 @@ app.get("/explore/Info/:Handle", (req, res) => {
 app.get("/explore/Rating/:Handle", (req, res) => {
   const handle = req.params.Handle;
   fetchRating(handle).then((data) => {
+    if (data.status !== "OK") {
+      res.send("No Contest attended yet!");
+    } else {
+      res.status(200).send(data.result);
+    }
+  });
+});
+
+app.get("/explore/Status/:Handle", (req, res) => {
+  const handle = req.params.Handle;
+  fetchStatus(handle).then((data) => {
     if (data.status !== "OK") {
       res.send("No Contest attended yet!");
     } else {

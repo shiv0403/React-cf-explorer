@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "./axios";
 import "./SingleUser.css";
 import LineGraph from "./LineGraph";
+import Table from "./Table";
 
 function SingleUser() {
   const [UserInfo, setUserInfo] = useState({});
@@ -20,7 +21,7 @@ function SingleUser() {
     <div className="single">
       <div className="single_info">
         <h1>
-          {UserInfo.firstName} {UserInfo.lastName}
+          {UserInfo.firstName} {UserInfo.lastName} aka {UserInfo.handle}
         </h1>
         <img src={UserInfo.titlePhoto} alt={UserInfo.Handle} />
         <h3>Current Rating: {UserInfo.rating}</h3>
@@ -29,6 +30,9 @@ function SingleUser() {
       </div>
       <div className="single_graph">
         <LineGraph handle={Handle} />
+      </div>
+      <div className="single_recentProbs">
+        <Table handle={Handle} />
       </div>
     </div>
   );

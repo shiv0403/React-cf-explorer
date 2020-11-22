@@ -84,7 +84,7 @@ function LineGraph({ handle }) {
   }, []);
 
   return (
-    <div style={{ width: "80%", height: "350px" }}>
+    <div style={{ height: "350px" }}>
       {UserRating?.length > 0 && (
         <Line
           data={{
