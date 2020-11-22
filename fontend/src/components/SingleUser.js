@@ -1,23 +1,35 @@
 import React, { useEffect, useState } from "react";
 import axios from "./axios";
 import "./SingleUser.css";
+import LineGraph from "./LineGraph";
 
 function SingleUser() {
-  const [Data, setData] = useState({});
+  const [UserInfo, setUserInfo] = useState({});
+  const urlArray = window.location.href.split("/");
+  const Handle = urlArray[urlArray.length - 1];
 
   useEffect(() => {
-    const urlArray = window.location.href.split("/");
-    const Handle = urlArray[urlArray.length - 1];
-    async function getData() {
-      const req = await axios.get(`/explore/${Handle}`); // axios returns a promise
-      setData(req.data);
+    async function getInfo() {
+      const req = await axios.get(`/explore/Info/${Handle}`); // axios returns a promise
+      setUserInfo(req.data);
     }
-    getData();
+    getInfo();
   }, []);
 
   return (
     <div className="single">
-      <h1>{Data.handle}</h1>
+      <div className="single_info">
+        <h1>
+          {UserInfo.firstName} {UserInfo.lastName}
+        </h1>
+        <img src={UserInfo.titlePhoto} alt={UserInfo.Handle} />
+        <h3>Current Rating: {UserInfo.rating}</h3>
+        <h3>Maximum Rating: {UserInfo.maxRating}</h3>
+        <h3>Title: {UserInfo.rank}</h3>
+      </div>
+      <div className="single_graph">
+        <LineGraph handle={Handle} />
+      </div>
     </div>
   );
 }

@@ -11,7 +11,6 @@ import "./Home.css";
 
 function Home() {
   const [Handle, setHandle] = useState("");
-  const [Data, setData] = useState({});
 
   const History = useHistory();
 

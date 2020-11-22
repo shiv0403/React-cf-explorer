@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import AboutCf from "./components/AboutCf";
-import TopProg from "./components/TopProg";
-import axios from "./components/axios";
 import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 import SingleUser from "./components/SingleUser";
 import Home from "./components/Home";
