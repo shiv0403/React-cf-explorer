@@ -1,0 +1,24 @@
+.recentContest {
+  margin-top: 20px;
+}
+
+.recentContest_list > tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recentContest_list {
+  overflow: scroll;
+  height: 300px;
+  width: 50%;
+  margin: auto;
+}
+
+.recentContest_list > tr {
+  padding: 10px;
+  font-weight: 800;
+}
+
+.recentContest_list > tr:nth-of-type(odd) {
+  background-color: #f3f2f8;
+}

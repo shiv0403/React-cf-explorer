@@ -1,0 +1,30 @@
+.common {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.common_contests {
+  overflow: scroll;
+  height: 300px;
+}
+
+.common_contests > tr {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+}
+
+.common_contests > tr:nth-of-type(odd) {
+  background-color: #f3f4f5;
+}
+
+.row > td:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row_ratingDiff:nth-of-type(odd) {
+  margin-right: 20px;
+}
