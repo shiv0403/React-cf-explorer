@@ -11,6 +11,8 @@ import "./Home.css";
 
 function Home() {
   const [Handle, setHandle] = useState("");
+  const [FirstHandle, setFirstHandle] = useState("");
+  const [SecondHandle, setSecondHandle] = useState("");
 
   const History = useHistory();
 
@@ -18,9 +20,22 @@ function Home() {
     setHandle(e.target.value);
   };
 
-  const handleSubmit = async (e) => {
+  const getFirstHandle = (e) => {
+    setFirstHandle(e.target.value);
+  };
+
+  const getSecondHandle = (e) => {
+    setSecondHandle(e.target.value);
+  };
+
+  const handleSubmitSingle = async (e) => {
     e.preventDefault();
-    History.push(`/explore/${Handle}`);
+    History.push(`/explore/single/${Handle}`);
+  };
+
+  const handleSubmitMulti = async (e) => {
+    e.preventDefault();
+    History.push(`/explore/multi/${FirstHandle}&${SecondHandle}`);
   };
 
   return (
@@ -40,11 +55,12 @@ function Home() {
         <Card className="home_explore_cards">
           <CardContent className="Card_form">
             <h2>Enter CF Handle</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmitSingle}>
               <input
                 type="text"
                 placeholder="Enter here"
                 spellCheck="false"
+                required
                 onChange={getHandle}
               />
               <br />
@@ -57,17 +73,21 @@ function Home() {
         <Card className="home_explore_cards">
           <CardContent className="Card_form">
             <h2>Enter CF Handles</h2>
-            <form action="">
+            <form onSubmit={handleSubmitMulti}>
               <input
                 type="text"
                 placeholder="First handle"
                 spellCheck="false"
+                required
+                onChange={getFirstHandle}
               />
               <br />
               <input
                 type="text"
                 placeholder="Second handle"
                 spellCheck="false"
+                required
+                onChange={getSecondHandle}
               />
               <br />
               <button type="submit" className="cards_btn">

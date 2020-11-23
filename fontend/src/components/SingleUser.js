@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "./axios";
 import "./SingleUser.css";
-import LineGraph from "./LineGraph";
+import LineGraphSingle from "./LineGraphSingle";
 import Table from "./Table";
 
 function SingleUser() {
@@ -29,7 +29,7 @@ function SingleUser() {
         <h3>Title: {UserInfo.rank}</h3>
       </div>
       <div className="single_graph">
-        <LineGraph handle={Handle} />
+        <LineGraphSingle handle={Handle} />
       </div>
       <div className="single_recentProbs">
         <Table handle={Handle} />
