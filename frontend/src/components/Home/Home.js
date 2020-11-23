@@ -48,7 +48,7 @@ function Home() {
         />
       </div>
 
-      <div className="home_explore">
+      <div className="home_explore" id="explore">
         <Card className="home_explore_cards">
           <CardContent className="Card_form">
             <h2>Enter CF Handle</h2>
@@ -94,8 +94,9 @@ function Home() {
           </CardContent>
         </Card>
       </div>
-
-      <AboutCf />
+      <div id="about_cf">
+        <AboutCf />
+      </div>
 
       <TopProg />
 

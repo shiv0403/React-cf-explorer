@@ -5,15 +5,17 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_branding">
-        <h1>CF-EXPLORER</h1>
+        <a href="/" style={{ color: "#fff" }}>
+          <h1>CF-EXPLORER</h1>
+        </a>
       </div>
       <div className="navbar_options">
         <ul>
           <li>
-            <a href="#">About CF</a>
+            <a href="#about_cf">About CF</a>
           </li>
           <li>
-            <a href="#">Explore</a>
+            <a href="#explore">Explore</a>
           </li>
         </ul>
       </div>

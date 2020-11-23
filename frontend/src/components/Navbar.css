@@ -6,9 +6,9 @@
   align-items: center;
   padding: 20px;
   background-color: #333333;
-  /* position: fixed;
+  position: sticky;
   width: 100%;
-  top: 0; */
+  top: 0;
 }
 
 .navbar_options > ul {
