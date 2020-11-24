@@ -9,4 +9,14 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
+  padding: 30px;
+}
+
+.topProgs_card {
+  border-radius: 10px !important;
+}
+
+.topProg_name {
+  margin-top: 10px !important;
+  font-weight: 700 !important;
 }

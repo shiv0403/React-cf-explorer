@@ -27,17 +27,51 @@ function CommonContest({ handles }) {
       <div className="common_contests">
         {CommonContests.map((Contest) => {
           return (
-            <tr className="row">
-              <td>{Contest.firstInfo.contestName}</td>
-              <td>
+            <div
+              className="row"
+              style={{
+                borderLeft:
+                  Contest.firstInfo.newRating - Contest.firstInfo.oldRating >= 0
+                    ? "16px solid lightGreen"
+                    : "16px solid red",
+                borderRight:
+                  Contest.secondInfo.newRating - Contest.secondInfo.oldRating >=
+                  0
+                    ? "16px solid lightGreen"
+                    : "16px solid red",
+              }}
+            >
+              <h2>{Contest.firstInfo.contestName}</h2>
+              <div className="row_ratingChanges">
                 <div className="row_ratingDiff">
-                  {Contest.firstInfo.newRating - Contest.firstInfo.oldRating}{" "}
+                  <h3>
+                    {Contest.firstInfo.newRating -
+                      Contest.firstInfo.oldRating >=
+                    0
+                      ? "+"
+                      : "-"}
+                    {""}
+                    {Math.abs(
+                      Contest.firstInfo.newRating - Contest.firstInfo.oldRating
+                    )}
+                  </h3>
                 </div>
                 <div className="row_ratingDiff">
-                  {Contest.secondInfo.newRating - Contest.secondInfo.oldRating}
+                  <h3>
+                    {Contest.secondInfo.newRating -
+                      Contest.secondInfo.oldRating >=
+                    0
+                      ? "+"
+                      : "-"}
+                    {""}
+                    {Math.abs(
+                      Contest.secondInfo.newRating -
+                        Contest.secondInfo.oldRating
+                    )}
+                  </h3>
                 </div>
-              </td>
-            </tr>
+              </div>
+            </div>
           );
         })}
       </div>

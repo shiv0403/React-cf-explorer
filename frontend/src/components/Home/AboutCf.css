@@ -1,12 +1,19 @@
 .about {
   text-align: center;
   padding: 50px;
+  background-color: #fff;
 }
 
 .about_main {
   width: 70%;
   margin: auto;
   margin-bottom: 50px;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
 }
 
 .about_main > h2 {
@@ -22,4 +29,14 @@
 .cf-img {
   height: 120px;
   width: 500px;
+  transition: transform 0.2s ease-out;
+  -webkit-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.cf-img:hover {
+  transform: scale(1.07);
 }

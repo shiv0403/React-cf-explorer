@@ -48,3 +48,75 @@ export const getCommonContest = (arr1, arr2) => {
 
   return arr;
 };
+
+const colors = {
+  newbie: {
+    color: "gray",
+  },
+  pupil: {
+    color: "green",
+  },
+  specialist: {
+    color: "#03A89E",
+  },
+  expert: {
+    color: "blue",
+  },
+  candidate_master: {
+    color: "#a0a",
+  },
+  master: {
+    color: "#FF8C00",
+  },
+  inter_master: {
+    color: "orange",
+  },
+  grandmaster: {
+    color: "red",
+  },
+  inter_grandmaster: {
+    color: "red",
+  },
+  legend_grandmaster: {
+    color: "red",
+  },
+};
+
+export const getColor = (UserInfo) => {
+  console.log(UserInfo.rank);
+  switch (UserInfo.rank) {
+    case "newbie": {
+      return colors.newbie.color;
+    }
+    case "pupil": {
+      return colors.pupil.color;
+    }
+    case "specialist": {
+      return colors.specialist.color;
+    }
+    case "expert": {
+      return colors.expert.color;
+    }
+    case "candidate master": {
+      return colors.candidate_master.color;
+    }
+    case "master": {
+      return colors.master.color;
+    }
+    case "international master": {
+      return colors.inter_master.color;
+    }
+    case "grandmaster": {
+      return colors.grandmaster.color;
+    }
+    case "international grandmaster": {
+      return colors.inter_master.color;
+    }
+    case "legendary grandmaster": {
+      return colors.legend_grandmaster.color;
+    }
+    default: {
+      return null;
+    }
+  }
+};

@@ -1,6 +1,11 @@
 .home_showcase > img {
   height: 350px;
   width: 400px;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
 }
 
 .home_showcase {
@@ -10,12 +15,25 @@
   margin-top: 60px;
 }
 
+.home_showcase_about {
+  background-color: #fff;
+  -webkit-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 31px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  height: 350px;
+  text-align: center;
+}
+
 .home_showcase_about > h1 {
   font-size: 3.3rem;
+  margin-top: 100px;
 }
 
 .home_showcase_about > p {
   font-size: 1.5rem;
+  width: 60%;
+  margin: auto;
 }
 
 .home_explore {
@@ -31,6 +49,16 @@
   height: 300px;
   width: 350px;
   text-align: center;
+  border-radius: 20px !important;
+  background-color: #fff !important;
+  -webkit-box-shadow: -1px 0px 50px -7px rgba(255, 255, 255, 0.75) !important;
+  -moz-box-shadow: -1px 0px 31px -7px rgba(255, 255, 255, 0.75) !important;
+  box-shadow: -1px 0px 50px -7px rgba(255, 255, 255, 0.75) !important;
+  transition: transform 0.2s ease-out !important;
+}
+
+.home_explore_cards:hover {
+  transform: scale(1.03);
 }
 
 .Card_form {

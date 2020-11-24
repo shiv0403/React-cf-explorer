@@ -3,9 +3,10 @@
   padding: 0;
 }
 
-/* body {
+body {
   background-color: #f5f6fa;
-} */
+  /* overflow-x: hidden; */
+}
 
 a {
   text-decoration: none;

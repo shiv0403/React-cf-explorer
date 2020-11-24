@@ -19,9 +19,24 @@ function RecentContest({ handle }) {
       <div className="recentContest_list">
         {UserContest.map((contest) => {
           return (
-            <tr>
-              <td>{contest.contestName}</td>
-              <td>{contest.newRating - contest.oldRating}</td>
+            <tr
+              style={{
+                backgroundColor:
+                  contest.newRating - contest.oldRating >= 0
+                    ? "#42e352"
+                    : "red",
+              }}
+            >
+              <td>
+                <h3>{contest.contestName}</h3>
+              </td>
+              <td>
+                <h3>
+                  {contest.newRating - contest.oldRating >= 0 ? "+" : "-"}
+                  {""}
+                  {Math.abs(contest.newRating - contest.oldRating)}
+                </h3>
+              </td>
             </tr>
           );
         })}

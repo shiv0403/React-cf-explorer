@@ -1,24 +1,42 @@
 .recentContest {
   margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.recentContest > h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #686e69;
+  font-size: 2.8rem;
 }
 
 .recentContest_list > tr {
   display: flex;
   justify-content: space-between;
+  padding: 15px;
+  font-weight: 1000;
+  color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .recentContest_list {
   overflow: scroll;
-  height: 300px;
+  height: 400px;
   width: 50%;
   margin: auto;
 }
 
-.recentContest_list > tr {
-  padding: 10px;
-  font-weight: 800;
+.recentContest_list > tr > td > h3 {
+  font-size: 1.3rem;
+  font-weight: 1000 !important;
 }
 
-.recentContest_list > tr:nth-of-type(odd) {
-  background-color: #f3f2f8;
+.recentContest_list > tr > td:nth-of-type(odd) {
+  margin-left: 50px;
+}
+
+.recentContest_list > tr > td:nth-of-type(even) {
+  margin-right: 50px;
 }

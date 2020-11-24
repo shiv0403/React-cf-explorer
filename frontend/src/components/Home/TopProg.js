@@ -51,7 +51,7 @@ function TopProg() {
       <div className="topProgs_cards">
         {Info.length > 0 &&
           Info.map((person) => (
-            <Card>
+            <Card className="topProgs_card">
               <CardContent>
                 <CardMedia
                   style={{
@@ -61,7 +61,7 @@ function TopProg() {
                   }}
                   image={person.titlePhoto}
                 />
-                <Typography color="textPrimary">
+                <Typography color="textPrimary" className="topProg_name">
                   {person.firstName} {""} {person.lastName}
                 </Typography>
               </CardContent>
