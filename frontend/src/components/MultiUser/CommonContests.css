@@ -8,6 +8,7 @@
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .common_contests {
@@ -20,20 +21,13 @@
   padding: 10px;
   border-radius: 40px;
   margin-bottom: 10px;
+  background-color: #fefcff;
 }
 
 .row > h2 {
   font-size: 1.6rem;
   font-weight: 1000;
   color: #4e4f4e;
-}
-
-.row:nth-of-type(odd) {
-  background-color: #fefcff;
-}
-
-.row:nth-of-type(even) {
-  background-color: #fefcff;
 }
 
 .row_ratingChanges {
@@ -46,4 +40,67 @@
   font-size: 1.5rem;
   color: #555;
   font-weight: 900;
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  .common {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+/* media queries mobile */
+
+@media (max-width: 850px) {
+  .common {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .common > h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    color: #333;
+  }
+
+  .common_contests {
+    overflow: scroll;
+    height: 500px;
+  }
+
+  .common_contests::-webkit-scrollbar {
+    display: none;
+  }
+
+  .row {
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    background-color: #fefcff;
+  }
+
+  .row > h2 {
+    font-size: 1rem;
+    font-weight: 1000;
+    color: #4e4f4e;
+  }
+
+  .row_ratingChanges {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .row_ratingDiff > h3 {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 900;
+  }
 }

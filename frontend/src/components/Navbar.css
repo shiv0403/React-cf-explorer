@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #333333;
   position: sticky;
   width: 100%;
@@ -33,4 +34,17 @@
   color: #ffffff;
   margin-left: 50px;
   cursor: pointer;
+}
+
+/* media queries mobile */
+
+@media (max-width: 850px) {
+  .navbar_options {
+    display: none;
+  }
+
+  .navbar_branding {
+    text-align: center;
+    margin: auto;
+  }
 }

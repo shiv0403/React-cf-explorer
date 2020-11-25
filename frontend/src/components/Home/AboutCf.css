@@ -40,3 +40,46 @@
 .cf-img:hover {
   transform: scale(1.07);
 }
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  .about_main > h2 {
+    font-size: 2.8rem;
+  }
+
+  .about_main > p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .cf-img {
+    height: 100px;
+    width: 400px;
+    padding: 20px;
+  }
+}
+
+/* media queries mobile */
+
+@media (max-width: 850px) {
+  .about_main {
+    padding: 40px;
+  }
+
+  .about_main > h2 {
+    font-size: 1.7rem;
+  }
+
+  .about_main > p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    width: 100%;
+  }
+
+  .cf-img {
+    height: 60px;
+    width: 220px;
+    padding: 20px;
+  }
+}

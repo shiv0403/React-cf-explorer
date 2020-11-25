@@ -6,6 +6,8 @@
       rel="icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNFfoY3l2jT8kuRWKC8oj-AjB2njmqGujJQ&usqp=CAU"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -43,5 +45,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 700,
+      });
+    </script>
   </body>
 </html>

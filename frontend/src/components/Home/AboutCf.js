@@ -4,7 +4,7 @@ import "./AboutCf.css";
 function AboutCf() {
   return (
     <div className="about">
-      <div class="about_main" data-aos="fade-left">
+      <div class="about_main">
         <h2>
           What is <span class="about_span">CODEFORCES?</span>
         </h2>
@@ -16,7 +16,7 @@ function AboutCf() {
           over 600,000 registered users.
         </p>
       </div>
-      <div class="about_image" data-aos="fade-right">
+      <div class="about_image">
         <a href="https://www.codeforces.com" target="_blank" rel="noreferrer">
           <img
             src="https://assets.codeforces.com/users/kguseva/comments/cf.png"

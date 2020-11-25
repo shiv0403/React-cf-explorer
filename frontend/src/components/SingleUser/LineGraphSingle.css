@@ -1,0 +1,18 @@
+.single_graph_int {
+  height: 350px;
+  margin-bottom: 140px;
+}
+
+/* media queries mobile */
+
+@media (max-width: 850px) {
+  .single_graph_int {
+    transform: rotate(-90deg);
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    margin-left: -100px;
+  }
+}

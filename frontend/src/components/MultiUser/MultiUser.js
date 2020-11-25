@@ -14,10 +14,13 @@ function MultiUser() {
     <div className="multi">
       <div className="multi_info">
         <UserInfo handle={handles[0]} />
-
+        <div className="multi_info_vs">
+          <h2>VS</h2>
+        </div>
         <UserInfo handle={handles[1]} />
       </div>
       <div className="multi_graph">
+        <h1>Rating Comparison</h1>
         <LineGraphMulti handles={handles} />
       </div>
       <div className="multi_commonContest">

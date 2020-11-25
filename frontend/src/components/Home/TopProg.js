@@ -60,6 +60,7 @@ function TopProg() {
                     paddingTop: "56.25%",
                   }}
                   image={person.titlePhoto}
+                  className="topProgs_image"
                 />
                 <Typography color="textPrimary" className="topProg_name">
                   {person.firstName} {""} {person.lastName}

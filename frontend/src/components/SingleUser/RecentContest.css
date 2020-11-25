@@ -40,3 +40,51 @@
 .recentContest_list > tr > td:nth-of-type(even) {
   margin-right: 50px;
 }
+
+/* media queries tab*/
+
+@media (max-width: 1200px) {
+  .recentContest_list {
+    overflow: scroll;
+    height: 400px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .recentContest_list > tr > td > h3 {
+    font-size: 1.2rem;
+    font-weight: 1900 !important;
+  }
+}
+
+/* media queries mobile */
+
+@media (max-width: 850px) {
+  .recentContest_list {
+    overflow: scroll;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .recentContest_list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .recentContest > h1 {
+    font-size: 2.4rem;
+  }
+
+  .recentContest_list > tr > td > h3 {
+    font-size: 0.8rem;
+    font-weight: 1900 !important;
+  }
+
+  .recentContest_list > tr > td:nth-of-type(odd) {
+    margin-left: 20px;
+  }
+
+  .recentContest_list > tr > td:nth-of-type(even) {
+    margin-right: 20px;
+  }
+}

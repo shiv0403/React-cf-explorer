@@ -100,7 +100,7 @@ function LineGraph({ handles }) {
   }, []);
 
   return (
-    <div style={{ height: "350px" }}>
+    <div className="single_graph_int">
       {UserRating1?.length > 0 && UserRating2?.length > 0 && (
         <Line
           data={{

@@ -42,3 +42,68 @@
 .user_info_span {
   margin-right: 10px !important;
 }
+
+/* media queries tab*/
+
+@media (max-width: 1200px) {
+  .userInfo {
+    width: 40%;
+    margin: auto;
+  }
+
+  .user_info > h3 {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    line-height: 1.5;
+  }
+
+  .user_info > h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    font-size: 1.7rem;
+  }
+}
+
+/* media queries mobile */
+
+@media (max-width: 850px) {
+  .userInfo {
+    width: 80%;
+    margin: auto;
+  }
+
+  .user_info {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .user_info > h3 {
+    font-size: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .user_info > h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+  }
+
+  .user_info_img > img {
+    border-radius: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 180px;
+    width: 180px;
+  }
+}

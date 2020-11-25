@@ -6,8 +6,72 @@
 }
 
 .multi_graph {
-  width: 60%;
+  width: 50%;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 70px;
+}
+
+.multi_graph > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.multi_info_vs {
+  margin-top: 30px;
+  font-weight: 1000;
+  font-size: 1.8rem;
+  color: orange;
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  .multi_graph {
+    width: 80%;
+    margin: auto;
+  }
+
+  .multi_UserInfo {
+    display: none;
+  }
+
+  .multi_graph {
+    margin-top: 130px;
+    margin-bottom: 100px;
+  }
+}
+
+/* media queries mobile */
+
+@media (max-width: 850px) {
+  .multi_info {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .multi_graph {
+    width: 80%;
+    margin: auto;
+  }
+
+  .multi_UserInfo {
+    display: none;
+  }
+
+  .multi_graph {
+    margin-top: 130px;
+    margin-bottom: 100px;
+  }
+
+  .multi_graph > h1 {
+    color: #333;
+    font-size: 2.2rem;
+    margin-top: -50px;
+  }
 }

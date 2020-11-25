@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import axios from "./../axios";
+import "./LineGraphSingle.css";
 
 let Data;
 
@@ -84,7 +85,7 @@ function LineGraph({ handle }) {
   }, []);
 
   return (
-    <div style={{ height: "350px" }}>
+    <div className="single_graph_int">
       {UserRating?.length > 0 && (
         <Line
           data={{
